@@ -4,7 +4,7 @@ header("Content-type: image/jpeg");
 
 $text = $_GET["text"];
 
-$background = "background.jpg";
+$background = "img/background.jpg";
 
 if($_GET["impo"] === "true") {
     $text .= " 는 임포스터였습니다."; 
