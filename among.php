@@ -4,6 +4,8 @@ header("Content-type: image/jpeg");
 
 $text = $_GET["text"];
 
+$font = "font/KoPubDotumMedium.ttf"; #Download Font Here 'http://www.kopus.org/biz/electronic/font.aspx'
+
 $color = strtolower($_GET["color"]);
 
 if($_GET["impo"] === "true") {
@@ -35,13 +37,13 @@ $image = imagecreatefromJPEG($background);
 
 $font_color = imagecolorallocate($image, 255, 255, 255);
 
-$box = imagettfbbox(16, 0, "font/KoPubDotumMedium.ttf", $text);
+$box = imagettfbbox(16, 0, $font, $text);
 
 $text_width = abs($box[2]) - abs($box[0]);
 
 $x = (imagesx($image) - $text_width) / 2;   
 
-imagettftext($image, 16, 0, $x, 258, $font_color, "font/KoPubDotumMedium.ttf", $text);
+imagettftext($image, 16, 0, $x, 258, $font_color, $font, $text);
 
 imageJPEG($image);
 
