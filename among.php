@@ -4,12 +4,31 @@ header("Content-type: image/jpeg");
 
 $text = $_GET["text"];
 
-$background = "img/background.jpg";
+$color = strtolower($_GET["color"]);
 
 if($_GET["impo"] === "true") {
     $text .= " 는 임포스터였습니다."; 
 } else {
     $text .= " 는 임포스터가 아니었습니다."; 
+}
+
+if(in_array($color, array(
+    "lightgreen",
+    "mint",
+    "yellow",
+    "brown",
+    "purple",
+    "pink",
+    "darkgreen",
+    "white",
+    "orange",
+    "red",
+    "blue",
+    "black"
+))) {
+    $background = "img/background_".$color.".jpg";
+} else {
+    $background = "img/background.jpg";
 }
 
 $image = imagecreatefromJPEG($background);
