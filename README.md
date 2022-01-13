@@ -8,7 +8,7 @@
 | `color`  | String  | 화면에 날라가는 캐릭터의 색상   | X         |
 | `impo`   | Boolean | `임포스터였습니다.` 메시지 출력 | X         |
 
-### Color
+### Enable Colors
 | Name         | 
 |:-------------|
 | `default`    |
