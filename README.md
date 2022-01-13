@@ -1,2 +1,26 @@
 # among-us
-![Alt text](sample/143AC7BB-3E71-4761-B398-81D46643642C.png)
+![Alt text](https://i.ibb.co/dffbRBx/2022-01-14-00-38-41.png)
+
+### Parameter
+| Name     | Type    | Description                     | Required  |
+|:---------|:--------|:--------------------------------|:----------|
+| `text`   | String  | 화면에 출력할 닉네임            | X         |
+| `color`  | String  | 화면에 날라가는 캐릭터의 색상   | X         |
+| `impo`   | Boolean | `임포스터였습니다.` 메시지 출력 | X         |
+
+### Color
+| Name         | 
+|:-------------|
+| `default`    |
+| `lightgreen` |
+| `mint`       |
+| `yellow`     |
+| `brown`      |
+| `purple`     |
+| `pink`       |
+| `darkgreen`  |
+| `white`      |
+| `orange`     |
+| `red`        |
+| `blue`       |
+| `black`      |
